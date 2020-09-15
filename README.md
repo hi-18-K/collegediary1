@@ -14,13 +14,15 @@ itself also decrease the performance of Application which needs to be worked muc
 Also a short description can be added but not the complete notes and with that too, it will be helpful for everyone because anyone can share technical and notechnical resources of his/her field.
 :innocent:
 
+Demonstration Link:- https://youtu.be/0VgQlKDdzLs 
 
 We have been trying to build this using Django REST Framework but that took too much time and deadline approached so early. Thus, We have created this with Django,
 as We already have some working experience with that. 
 
 This is just a minimal model of how things can be done and what can be done with this project. I have been planning to complete this by 26th September, 2020.. and upload
 in the repo:- https://github.com/hi-18-K/collegediary 
-#### If you are checking this repo after that do check out above link.
+### If you are checking this repo after that do check out above link. 
+:blush:
 
 ## Thanks for reading :)
 ## Feel free to suggest anything new..and helping with resources related with this project!
