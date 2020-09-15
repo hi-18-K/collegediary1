@@ -15,6 +15,14 @@ itself also decrease the performance of Application which needs to be worked muc
 Also a short description can be added but not the complete notes and with that too, it will be helpful for everyone because anyone can share technical and notechnical resources of his/her field.
 :innocent:
 
+
+#### Explanation of file stack:- 
+
+-> First project is named as "collegediary1" in terms of file structure.
+-> There are three apps created project, users, blog.
+-
+
+
 Demonstration Link:- https://youtu.be/0VgQlKDdzLs 
 
 We have been trying to build this using Django REST Framework but that took too much time and deadline approached so early. Thus, We have created this with Django,
@@ -28,3 +36,22 @@ in the repo:- https://github.com/hi-18-K/collegediary
 ## Thanks for reading :)
 ## Feel free to suggest anything new..and helping with resources related with this project!
 ### :upside_down_face:
+
+
+for running the system in your local environment follow the instructions:-
+
+1. clone the repository in your local environment.
+2. start command-line interface.
+3. change path to the project directory.
+4. run command - "python manage.py makemigrations blog" -> "python manage.py makemigrations users" -> "python manage.py makemigrations project"
+                 -all (without inverted commas)
+5. run the project by command:- 'python manage.py runserver'
+6. on your browser open localhost:8000 to check out the functionality.
+
+
+What we can do further with this site:-
+1. using filters(by tags) and search (search bar)for project and blog section.
+2. Implement clustring to let the user see relevant data on his/her home screen.
+3. Making mobile app and using both at college level.
+
+You can add more if can think of..!!
