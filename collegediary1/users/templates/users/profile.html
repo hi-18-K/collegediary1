@@ -1,0 +1,16 @@
+{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+  <div class="content-section">
+        <h2 class="account-heading">{{ user.username }}</h2>
+        <p class="text-secondary">{{ user.email }}</p>
+        <p class="text-secondary">{{ user.profile.bio }}</p>
+      </div>
+    </div>
+    <!-- FORM HERE -->
+    <br>
+    <a href="{% url 'updateProfile' %}">Update Profile</a>
+    <br>
+    <a href="{% url 'password_reset' %}">Update Password</a>
+  </div>
+{% endblock content %}
