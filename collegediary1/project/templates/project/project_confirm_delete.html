@@ -1,11 +1,11 @@
-{% extends "users/base.html" %}
+{% extends "project/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
   <div class="loginbox">
     <form class="" action="" method="POST">
       {% csrf_token %}
       <fieldset class="form-group">
-        <legend class="border-bottom mb-4">Delete prject from CollegeDiary:(</legend>
+        <legend class="border-bottom mb-4">Delete project from CollegeDiary:(</legend>
         <h4>Are you sure you want to delete project "{{ object.title}}"</h4>
       </fieldset>
       <div class="form-group">
@@ -13,7 +13,7 @@
       </div>
     </form>
     <div class="border-top pt-3">
-      <a class="btn btn-outline-info" href="{% url 'post-detail' object.id %}">Cancel</a>
+      <a class="btn btn-outline-info" href="{% url 'project-detail' object.id %}">Cancel</a>
     </div>
   </div>
 {% endblock content %}

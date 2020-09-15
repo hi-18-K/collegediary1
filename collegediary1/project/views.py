@@ -27,7 +27,7 @@ class UserProjectListView(ListView):       #ListView for posts
 
     def get_queryset(self):
         user = get_object_or_404(User , username=self.kwargs.get('username'))
-        return Project.objects.filter(author=user).order_by('-date_posted')
+        return Project.objects.filter(creator=user).order_by('-date_posted')
 
 class ProjectDetailView(DetailView):
     model = Project
@@ -38,7 +38,7 @@ class ProjectCreateView(LoginRequiredMixin, CreateView):
     fields = ['title','content', 'github_link', 'tag']
 
     def form_valid(self,form):
-        form.instance.author = self.request.user
+        form.instance.creator = self.request.user
         return super().form_valid(form)
     #return redirect(request, 'blog/home.html')         #or use get_absolute-url method
 
@@ -47,23 +47,22 @@ class ProjectUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     fields = ['title','content','github_link', 'tag']
 
     def form_valid(self,form):
-        form.instance.author = self.request.user
+        form.instance.creator = self.request.user
         return super().form_valid(form)
 
     def test_func(self):
         project = self.get_object()
-        if self.request.user == project.author:
+        if self.request.user == project.creator:
             return True
         return False
 
 class ProjectDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Project
-    success_url = '/'
+    success_url = 'project-home'
     def test_func(self):
         project = self.get_object()
-        if self.request.user == project.author:
+        if self.request.user == project.creator:
             return True
-        return False
-
+        return Falss
 # def about(request):
 #     return render(request, 'blog/about.html', {'title': 'About'})

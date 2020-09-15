@@ -3,10 +3,9 @@
   <h3 class ="mb-3">Projects created by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h3>
     {% for project in projects%}
     <article class="media content-section">
-      <img class="rounded-circle article-img" src="{{ project.author.profile.image.url }}" alt="">
       <div class="media-body">
         <div class="article-metadata">
-          <a class="mr-2" href="{% url 'user-projects' project.author.username %}">{{ project.author }}</a>
+          <a class="mr-2" href="{% url 'user-projects' project.creator.username %}">{{ project.creator }}</a>
           <small class="text-muted">{{ project.date_posted|date:'b d,Y' }}</small>
         </div>
         <h4><a class="article-title" href="{% url 'project-detail' project.id %}" style="">{{ project.title }}</a></h4>

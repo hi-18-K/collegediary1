@@ -10,7 +10,7 @@ from . import views
 urlpatterns = [
     #path('', views.home , name = 'blog-home'),
     path('',ProjectListView.as_view(), name = 'project-home'),
-    path('user/<str:username>',UserProjectListView.as_view(), name = 'user-projects'),
+    path('user/<str:username>/',UserProjectListView.as_view(), name = 'user-projects'),
     path('<int:pk>/',ProjectDetailView.as_view(), name = 'project-detail'),
     path('new/',ProjectCreateView.as_view(), name = 'project-create'),
     path('<int:pk>/update/',ProjectUpdateView.as_view(), name = 'project-update'),

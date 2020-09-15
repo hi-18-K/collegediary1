@@ -5,10 +5,10 @@
     <article class="media content-section">
       <div class="media-body">
         <div class="article-metadata">
-          <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ project.creator }}</a>
+          <a class="mr-2" href="{% url 'user-projects' project.creator.username %}">{{ project.creator }}</a>
           <small class="text-muted">{{ project.date_posted|date:'b d,Y' }}</small>
         </div>
-        <h4><a class="article-title" href="{% url 'post-detail' post.id %}" style="">{{ project.title }}</a></h4>
+        <h4><a class="article-title" href="{% url 'project-detail' project.id %}" style="">{{ project.title }}</a></h4>
         <p class="article-content">{{ project.content }}</p>
       </div>
     </article>
