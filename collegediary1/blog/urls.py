@@ -17,6 +17,18 @@ urlpatterns = [
     path('post/<int:pk>/delete/',PostDeleteView.as_view(), name = 'post-delete'),
     path('about/', views.about , name = 'blog-about'),
 
+
+    path('firstyear/ec/',PostListView.as_view(), name = 'firstyear-ec'),
+    path('firstyear/ei/',PostListView.as_view(), name = 'firstyear-ei'),
+    path('firstyear/cs/',PostListView.as_view(), name = 'firstyear-cs'),
+    path('firstyear/it/',PostListView.as_view(), name = 'firstyear-it'),
+    path('firstyear/mech/',PostListView.as_view(), name = 'firstyear-mech'),
+    path('firstyear/civil/',PostListView.as_view(), name = 'firstyear-civil'),
+    path('firstyear/elec/',PostListView.as_view(), name = 'firstyear-elec'),
+    path('firstyear/chem/',PostListView.as_view(), name = 'firstyear-chem'),
+
+    
+
 ]
 
 #as_view() by default expects-

@@ -8,6 +8,7 @@ from django.views.generic import (ListView,
                                   UpdateView,
                                   DeleteView)
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+import django_filters
 
 #blog views
 
@@ -58,11 +59,11 @@ class ProjectUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
 class ProjectDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Project
-    success_url = 'project-home'
+    success_url = '/'
     def test_func(self):
         project = self.get_object()
         if self.request.user == project.creator:
             return True
-        return Falss
+        return False
 # def about(request):
 #     return render(request, 'blog/about.html', {'title': 'About'})
