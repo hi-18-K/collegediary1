@@ -4,8 +4,9 @@
 
 
 
-TechStack:- Django, HTML, CSS, Sqlite3(in developement environment), PostreSQL in Heroku Deployment
-Storage :- None  :wink:
+### TechStack:- Django, HTML, CSS, Sqlite3(in developement environment), PostreSQL in Heroku Deployment
+### Storage :- None  
+:wink:
 
 
 College Diary is project aimed to list all the projects done in college by students, academic files (such as notes of diffrent class, files of diffrent clubs)..
