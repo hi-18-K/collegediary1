@@ -32,6 +32,7 @@
           {% if user.is_authenticated %}
             <li class="nav-item">
                 <a href="{% url 'blog-home'%}">Home</a>
+                <a class="nav-link" href="{% url 'project-home'%}">Projects</a>
               <a class="nav-link" href="{% url 'profile'%}">Profile</a>
               <a class="nav-link" href="{% url 'logout'%}">LogOut</a>
             </li>
