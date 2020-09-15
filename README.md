@@ -20,7 +20,9 @@ Also a short description can be added but not the complete notes and with that t
 
 -> First project is named as "collegediary1" in terms of file structure.
 -> There are three apps created project, users, blog.
--
+-> blog app is based on Post model, users app on Student model and project app on Project model.
+-> Rest are views and urls as usual on running server collegediary1.urls calls <app-name>.urls then, <app-name>.urls calls <view-name> then, particular view 
+  calls template rendered.  
 
 
 Demonstration Link:- https://youtu.be/0VgQlKDdzLs 
