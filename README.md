@@ -30,7 +30,7 @@ Also a short description can be added but not the complete notes and with that t
   calls template rendered.  
 
 
-Demonstration Link:- https://youtu.be/0VgQlKDdzLs 
+##### Demonstration Link:- https://youtu.be/0VgQlKDdzLs 
 
 We have been trying to build this using Django REST Framework but that took too much time and deadline approached so early. Thus, We have created this with Django,
 as We already have some working experience with that. 
@@ -62,7 +62,7 @@ in the repo:- https://github.com/hi-18-K/collegediary
 6. on your browser open localhost:8000 to check out the functionality.
 
 
--- What we can do further with this site:- --
+###### What we can do further with this site:-
 1. using filters(by tags) and search (search bar)for project and blog section.
 
 2. Implement clustring to let the user see relevant data on his/her home screen.
@@ -70,4 +70,4 @@ in the repo:- https://github.com/hi-18-K/collegediary
 3. Making mobile app and using both at college level.
 
 
--- You can add more if can think of..!! --
+You can add more if can think of..!! 
