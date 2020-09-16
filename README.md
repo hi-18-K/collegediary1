@@ -45,7 +45,7 @@ in the repo:- https://github.com/hi-18-K/collegediary
 ### :upside_down_face:
 
 
-for running the system in your local environment follow the instructions:-
+#### for running the system in your local environment follow the instructions:-
 
 1. clone the repository in your local environment.
 
@@ -62,7 +62,7 @@ for running the system in your local environment follow the instructions:-
 6. on your browser open localhost:8000 to check out the functionality.
 
 
-What we can do further with this site:-
+-- What we can do further with this site:- --
 1. using filters(by tags) and search (search bar)for project and blog section.
 
 2. Implement clustring to let the user see relevant data on his/her home screen.
@@ -70,4 +70,4 @@ What we can do further with this site:-
 3. Making mobile app and using both at college level.
 
 
-You can add more if can think of..!!
+-- You can add more if can think of..!! --
